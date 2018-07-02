@@ -1,0 +1,9 @@
+{
+  "name": "rollup-watch-twice",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "devDependencies": {
+    "rollup": "^0.62.0"
+  },
+  "private": true
+}
