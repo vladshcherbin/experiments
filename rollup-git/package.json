@@ -1,4 +1,10 @@
 {
   "name": "rollup-git",
+  "scripts": {
+    "build": "rollup -c"
+  },
+  "devDependencies": {
+    "rollup": "^1.2.1"
+  },
   "private": true
 }
