@@ -3433,6 +3433,8 @@ footer h2 {
   var saturday = weekday(6);
 
   var sundays = sunday.range;
+  var mondays = monday.range;
+  var thursdays = thursday.range;
 
   var month = newInterval(function(date) {
     date.setDate(1);
@@ -3522,6 +3524,8 @@ footer h2 {
   var utcSaturday = utcWeekday(6);
 
   var utcSundays = utcSunday.range;
+  var utcMondays = utcMonday.range;
+  var utcThursdays = utcThursday.range;
 
   var utcMonth = newInterval(function(date) {
     date.setUTCDate(1);
@@ -4412,11 +4416,8 @@ footer h2 {
 
     function mouseover(d) {
       const percentageNum = (100 * d.value) / totalSize;
-      const percentage = percentageNum === 100 ? "100" : percentageNum.toPrecision(2);
-      let percentageString = percentage + "%";
-      if (percentage < 0.1) {
-        percentageString = "< 0.1%";
-      }
+      const percentage = percentageNum.toFixed(2);
+      const percentageString = percentage + "%";
 
       select(chartNode)
         .select(".details-name")

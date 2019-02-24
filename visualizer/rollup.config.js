@@ -18,6 +18,6 @@ export default {
       browser: true
     }),
     commonjs(),
-    visualizer()
+    visualizer({ open: true })
   ]
 }
