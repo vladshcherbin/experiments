@@ -17,7 +17,7 @@ export default {
     commonjs(),
     linaria(),
     css({
-      output: 'dist/app.css'
+      output: 'build/app.css'
     })
   ]
 }
