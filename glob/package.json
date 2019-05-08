@@ -1,0 +1,16 @@
+{
+  "name": "glob",
+  "scripts": {
+    "start": "nodemon index.js -w index.js"
+  },
+  "dependencies": {
+    "fast-glob": "^2.2.6",
+    "glob": "^7.1.4",
+    "is-glob": "^4.0.1",
+    "micromatch": "^4.0.2"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.0"
+  },
+  "private": "true"
+}
